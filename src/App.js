@@ -15,7 +15,7 @@ function App() {
         .then((res) => {
           setWeather(res);
           setQuery("");
-          console.log(res);
+          // console.log(res);
         });
     }
   };
