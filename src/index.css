@@ -9,19 +9,22 @@ body {
 }
 
 .app {
-  background-image: url("./assets/cold-bg.jpg");
+  background-image: url("./assets/cold-bg.jpg") !important;
   background-size: cover;
   background-position: bottom;
   transition: 0.4 ease;
 }
 
 .app.warm {
-  background-image: url("../src/assets/warm-bg.jpg");
+  background-image: url("./assets/warm-bg.jpg") !important;
 }
 
 main {
   min-height: 100vh;
-  background-color: skyblue;
+  background: #00c6ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   padding: 25px;
 }
 
@@ -33,7 +36,8 @@ main {
 .search-box .search-bar {
   display: block;
   width: 100%;
-  padding: 15px;
+
+  padding: 20px;
 
   appearance: none;
   background: none;
@@ -82,10 +86,10 @@ main {
   position: relative;
   display: inline-block;
   margin: 30px auto;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.329);
   border-radius: 16px;
 
-  padding: 15px 25px;
+  padding: 15px 18px;
 
   color: #fff;
   font-size: 102px;
